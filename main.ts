@@ -4,6 +4,22 @@ input.onButtonPressed(Button.A, function () {
 })
 input.onButtonPressed(Button.AB, function () {
     Countdown()
+    for (let index = 0; index < 4; index++) {
+        basic.showLeds(`
+            # . # . #
+            . # . # .
+            # . # . #
+            . # . # .
+            # . # . #
+            `)
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+    }
 })
 input.onButtonPressed(Button.B, function () {
     number += 2
